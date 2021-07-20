@@ -1,0 +1,18 @@
+强制提交到远程
+git push -f origin dev
+
+提取不同文件
+git archive -o ./update.zip HEAD $(git diff --name-only HEAD^)
+
+删除不必版本控制的文件
+git rm --cached *workspace.xml*
+
+忽略输入密码
+git config --global credential.helper store
+
+配置私钥
+ssh-keygen -t rsa -C 'ww199408145474@163.com'
+
+缓存内容
+git stash
+git stash pop
